@@ -20,6 +20,8 @@ const ResultScreen = ({ route, navigation }) => {
       percentage,
     };
 
+  
+
     const existingData = await AsyncStorage.getItem('quizHistory');
     const parsed = existingData ? JSON.parse(existingData) : [];
 
